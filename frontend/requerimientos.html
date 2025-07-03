@@ -1,0 +1,55 @@
+<!-- Modal de Requerimientos -->
+<div id="modal-requerimiento" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-requerimiento-title">
+    <div class="modal-overlay" tabindex="-1" data-modal-close></div>
+    
+    <div class="modal-content" role="document">
+        <div class="modal-header">
+            <h3 id="modal-requerimiento-title">
+                <i class="fas fa-file-alt"></i>
+                <span id="tipo-requerimiento-text">Registrar Requerimiento</span>
+                <span class="badge" id="tipo-requerimiento-badge"></span>
+            </h3>
+            <button class="modal-close" aria-label="Cerrar modal" data-modal-close>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="modal-body">
+            <form id="form-requerimiento">
+                <input type="hidden" name="tipo" id="tipo-requerimiento">
+                <input type="hidden" name="devolucion_id" id="devolucion-id">
+                
+                <div class="form-group">
+                    <label for="observaciones" class="required">Observaciones</label>
+                    <textarea 
+                        id="observaciones" 
+                        class="form-control" 
+                        rows="4"
+                        required
+                        aria-required="true"
+                        placeholder="Describa los detalles del requerimiento..."
+                        maxlength="500"
+                    ></textarea>
+                    <div class="form-footer">
+                        <small class="char-counter"><span id="char-count">0</span>/500 caracteres</small>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="adjuntos">Adjuntar Documentos (Opcional)</label>
+                    <input type="file" id="adjuntos" class="form-control" multiple accept=".pdf,.jpg,.png">
+                    <small class="form-text">Formatos aceptados: PDF, JPG, PNG (Máx. 5MB cada uno)</small>
+                </div>
+            </form>
+        </div>
+        
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-modal-close>
+                <i class="fas fa-times"></i> Cancelar
+            </button>
+            <button type="submit" form="form-requerimiento" class="btn btn-primary" id="btn-enviar-req">
+                <i class="fas fa-paper-plane"></i> Enviar al SAT
+            </button>
+        </div>
+    </div>
+</div>
