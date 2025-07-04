@@ -365,4 +365,6 @@ def obtener_devolucion(devolucion_id):
 # Ejecutar servidor
 if __name__ == '__main__':
     init_db()
-    app.run(debug=True)
+    from dotenv import load_dotenv
+    load_dotenv()
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
