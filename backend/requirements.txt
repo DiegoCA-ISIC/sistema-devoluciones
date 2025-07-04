@@ -4,3 +4,4 @@ python-dateutil==2.8.2
 reportlab==3.6.12  # Para generación de PDFs
 python-dotenv==0.21.0  # Para manejo de variables de entorno
 gunicorn==20.1.0  # Para servir la aplicación
+tzdata==2023.2  # Para manejo de zonas horarias
