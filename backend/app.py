@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, abort
+from flask import Flask, jsonify, request, abort, send_from_directory
 from flask_cors import CORS
 import sqlite3
 from datetime import datetime, timedelta
@@ -118,6 +118,10 @@ def enviar_alerta(email, mensaje):
             server.send_message(msg)
     except Exception as e:
         app.logger.error(f"Error enviando email: {str(e)}")
+        
+@app.route('/')
+def serve_frontend():
+    return send_from_directory('src', 'index.html')
         
 @app.route('/api/empresas', methods=['POST'])
 def crear_empresa():
