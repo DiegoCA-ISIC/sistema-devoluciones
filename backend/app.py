@@ -121,7 +121,7 @@ def enviar_alerta(email, mensaje):
         
 @app.route('/')
 def serve_frontend():
-    return send_from_directory('src', 'index.html')
+    return send_from_directory('frontend/src', 'index.html')
         
 @app.route('/api/empresas', methods=['POST'])
 def crear_empresa():
