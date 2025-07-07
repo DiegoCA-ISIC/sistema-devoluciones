@@ -55,6 +55,14 @@ const utils = {
         return new Date(dateStr).toLocaleDateString('es-MX', options);
     },
 
+    formatearMonto(monto) {
+        if (monto === null || monto === undefined) return '$0.00';
+        return new Intl.NumberFormat('es-MX', {
+            style: 'currency',
+            currency: 'MXN'
+        }).format(monto);
+    },
+
     validarFecha(fechaStr) {
         const regex = /^\d{4}-\d{2}-\d{2}$/;
         if (!regex.test(fechaStr)) return false;
@@ -168,6 +176,7 @@ function renderizarDevoluciones() {
             <td>${devolucion.id}</td>
             <td>${utils.formatDate(devolucion.fecha_solicitud)}</td>
             <td>${utils.formatDate(devolucion.fecha_limite)}</td>
+            <td class="text-end">${utils.formatearMonto(devolucion.monto)}</td>  <!-- Nueva celda -->
             <td>${devolucion.req1_notificacion ? utils.formatDate(devolucion.req1_notificacion) : '-'}</td>
             <td>${devolucion.req2_notificacion ? utils.formatDate(devolucion.req2_notificacion) : '-'}</td>
             <td class="${devolucion.dias_restantes < 10 ? 'text-danger' : ''}">
@@ -194,6 +203,7 @@ function renderizarDevoluciones() {
                 <th>ID</th>
                 <th>Fecha Solicitud</th>
                 <th>Fecha Límite</th>
+                <th>Monto</th>
                 <th>1er Requerimiento</th>
                 <th>2do Requerimiento</th>
                 <th>Días Restantes</th>

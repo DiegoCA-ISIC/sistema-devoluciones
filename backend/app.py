@@ -13,7 +13,13 @@ import tzdata
 
 # Configuración inicial
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": ["http://127.0.0.1:8000", "http://localhost:8000"]}})
+CORS(app, resources={
+    r"/api/*": {
+        "origins": ["http://localhost:5173", "http://127.0.0.1:5173"],
+        "methods": ["GET", "POST", "PUT", "DELETE"],
+        "allow_headers": ["Content-Type"]
+    }
+})
 notificador = Notificador()
 
 # Configuración del sistema

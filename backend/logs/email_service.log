@@ -779,3 +779,43 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key UTC'
 2025-07-03 16:13:41,252 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2025 16:13:41] "[35m[1mPOST /api/devoluciones HTTP/1.1[0m" 201 -
 2025-07-03 16:13:41,264 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2025 16:13:41] "GET /api/devoluciones HTTP/1.1" 200 -
 2025-07-03 16:13:49,929 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2025 16:13:49] "GET /api/devoluciones/17 HTTP/1.1" 200 -
+2025-07-07 12:30:32,065 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-07 12:30:32,099 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-07 12:30:32,128 - werkzeug - INFO -  * Restarting with stat
+2025-07-07 12:30:32,725 - werkzeug - WARNING -  * Debugger is active!
+2025-07-07 12:30:32,731 - werkzeug - INFO -  * Debugger PIN: 135-065-037
+2025-07-07 12:31:55,591 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 12:31:55] "[33mGET /src/ HTTP/1.1[0m" 404 -
+2025-07-07 12:31:55,647 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 12:31:55] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-07 12:31:56,225 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 12:31:56] "[33mGET /src/ HTTP/1.1[0m" 404 -
+2025-07-07 12:31:56,384 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 12:31:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-07 12:47:13,201 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 12:47:13] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 12:47:13,208 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 12:47:13] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 12:47:40,410 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 12:47:40] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 12:47:40,715 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 12:47:40] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 12:47:57,921 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 12:47:57] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 12:47:57,922 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 12:47:57] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 12:55:41,600 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-07 12:55:41,600 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-07 12:55:41,604 - werkzeug - INFO -  * Restarting with stat
+2025-07-07 12:55:42,163 - werkzeug - WARNING -  * Debugger is active!
+2025-07-07 12:55:42,172 - werkzeug - INFO -  * Debugger PIN: 135-065-037
+2025-07-07 13:59:48,109 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-07 13:59:48,117 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-07 13:59:48,123 - werkzeug - INFO -  * Restarting with stat
+2025-07-07 13:59:48,701 - werkzeug - WARNING -  * Debugger is active!
+2025-07-07 13:59:48,706 - werkzeug - INFO -  * Debugger PIN: 135-065-037
+2025-07-07 13:59:57,605 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 13:59:57] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 13:59:57,607 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 13:59:57] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:00:02,351 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:00:02] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:00:02,733 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:00:02] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:00:09,718 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:00:09] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:00:10,024 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:00:10] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:00:22,582 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:00:22] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:00:22,631 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:00:22] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:30:40,292 - werkzeug - INFO -  * Detected change in 'D:\\SitioWeb\\sistema-devoluciones\\backend\\app.py', reloading
+2025-07-07 14:30:40,921 - werkzeug - INFO -  * Restarting with stat
+2025-07-07 14:30:41,521 - werkzeug - WARNING -  * Debugger is active!
+2025-07-07 14:30:41,526 - werkzeug - INFO -  * Debugger PIN: 135-065-037

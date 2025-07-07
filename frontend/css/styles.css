@@ -582,6 +582,17 @@ body {
     white-space: normal;
 }
 
+/* Alineación a la derecha para montos */
+.text-end {
+    text-align: right;
+    font-family: 'Courier New', monospace;
+}
+
+/* Mejor espaciado para la tabla */
+#tablaDevoluciones th, #tablaDevoluciones td {
+    padding: 8px 12px;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;

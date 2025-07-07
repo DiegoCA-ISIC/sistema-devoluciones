@@ -1,25 +1,22 @@
 import { defineConfig } from 'vite'
 import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
-  // Configuración base
   root: path.resolve(__dirname, './'),
-  base: '/',
-  publicDir: 'public',
-  
-  // Configuración del servidor de desarrollo
   server: {
-    port: 3000,
-    open: true // Abre el navegador automáticamente
+    proxy: {
+      '/api': 'http://localhost:5000',
+      '/static': 'http://localhost:5000'
+    }
   },
-
-  // Configuración de compilación
   build: {
     outDir: '../backend/static',
+    emptyOutDir: true,
     rollupOptions: {
-      input: {
-        main: './src/index.html'
-      }
+      input: path.resolve(__dirname, 'index.html')
     }
   }
 })
