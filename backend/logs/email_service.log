@@ -819,3 +819,41 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key UTC'
 2025-07-07 14:30:40,921 - werkzeug - INFO -  * Restarting with stat
 2025-07-07 14:30:41,521 - werkzeug - WARNING -  * Debugger is active!
 2025-07-07 14:30:41,526 - werkzeug - INFO -  * Debugger PIN: 135-065-037
+2025-07-07 14:31:02,768 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:31:02] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:31:02,769 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:31:02] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:31:05,140 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:31:05] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:31:05,443 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:31:05] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:31:58,962 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:31:58] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:31:58,965 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:31:58] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:32:43,263 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:32:43] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:32:43,265 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:32:43] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:39:12,310 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:39:12] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:39:12,311 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:39:12] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:41:01,892 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:41:01] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:41:01,894 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:41:01] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:41:37,075 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:41:37] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:41:37,380 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:41:37] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:43:05,502 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:43:05] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:43:05,503 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:43:05] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:44:20,054 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:44:20] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:44:20,055 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:44:20] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:52:57,778 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:52:57] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:52:57,786 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:52:57] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:54:29,015 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:54:29] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:54:29,017 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:54:29] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:54:38,520 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:54:38] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:54:38,838 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:54:38] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:55:20,784 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:55:20] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-07 14:55:20,797 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:55:20] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:55:52,972 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:55:52] "GET /api/devoluciones/16 HTTP/1.1" 200 -
+2025-07-07 14:56:02,263 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:56:02] "GET /api/devoluciones/17 HTTP/1.1" 200 -
+2025-07-07 14:56:45,925 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:56:45] "GET /api/devoluciones/5 HTTP/1.1" 200 -
+2025-07-07 14:57:08,953 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:57:08] "GET /api/devoluciones/16 HTTP/1.1" 200 -
+2025-07-07 14:57:15,821 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:57:15] "OPTIONS /api/devoluciones/16/requerimientos HTTP/1.1" 200 -
+2025-07-07 14:57:17,395 - app - ERROR - Error enviando email: 'ascii' codec can't encode character '\xf1' in position 30: ordinal not in range(128)
+2025-07-07 14:57:17,395 - root - INFO - Email enviado para devolución 16
+2025-07-07 14:57:17,396 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:57:17] "POST /api/devoluciones/16/requerimientos HTTP/1.1" 200 -
+2025-07-07 14:57:17,444 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:57:17] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-07 14:57:17,779 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:57:17] "GET /api/devoluciones/16 HTTP/1.1" 200 -
+2025-07-07 15:04:10,607 - werkzeug - INFO -  * Detected change in 'D:\\SitioWeb\\sistema-devoluciones\\backend\\app.py', reloading
+2025-07-07 15:04:10,785 - werkzeug - INFO -  * Restarting with stat
