@@ -135,9 +135,8 @@ def enviar_alerta(email, mensaje):
         
 # Ruta para archivos estáticos
 @app.route('/static/<path:filename>')
-def serve_static(filename):
-    root_dir = os.path.dirname(os.getcwd())
-    return send_from_directory(os.path.join(root_dir, 'backend', 'static'), filename)
+def static_files(filename):
+    return send_from_directory('../frontend', filename)
 
 @app.route('/')
 def serve_frontend():
