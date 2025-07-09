@@ -1,4 +1,5 @@
 import sqlite3
+import psycopg2  # Asegúrate de añadirlo a requirements.txt
 from datetime import datetime, timedelta
 import os
 
@@ -6,8 +7,8 @@ import os
 def init_database():
     """Inicializa la base de datos con estructura completa y datos de prueba"""
     try:
-        db_path = os.getenv('DATABASE_URL', 'file:///data/devoluciones.db').replace('file://', '')
-        conn = sqlite3.connect(db_path)
+        db_url = os.getenv('DATABASE_URL')
+        conn = psycopg2.connect(db_url, sslmode='require') if db_url else sqlite3.connect('devoluciones.db')
         cursor = conn.cursor()
         
         # Tabla de devoluciones (estructura mejorada)

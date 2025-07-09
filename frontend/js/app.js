@@ -9,6 +9,10 @@ const state = {
 // Observers para cambios de estado
 const observers = [];
 
+const API_URL = import.meta.env.PROD 
+  ? 'https://sistema-devoluciones.onrender.com/api' 
+  : 'http://localhost:5000/api';
+
 // Cache de elementos del DOM
 const UI = {
     get empresa() { return document.getElementById('empresa'); },
@@ -106,7 +110,7 @@ async function cargarDatosIniciales() {
     setLoading(true);
 
     try {
-        const data = await http.get('http://localhost:5000/api/devoluciones');
+        const data = await http.get(`${API_URL}/devoluciones`);
         setDevoluciones(data);
         renderizarDevoluciones();
 
@@ -145,7 +149,7 @@ async function registrarDevolucion() {
 
         console.log("Registrando devolución:", data);
 
-        const response = await http.post('http://localhost:5000/api/devoluciones', data);
+        const response = await http.post(`${API_URL}/devoluciones`, data);
 
         setCurrentDevolucion(response.id);
         mostrarExito(`Devolución registrada:\nFecha Límite: ${utils.formatDate(response.fecha_limite)}`);
@@ -280,7 +284,7 @@ async function gestionarRequerimiento(devolucionId) {
 
     // Opcional: Cargar detalles adicionales
     try {
-        const detalle = await http.get(`http://localhost:5000/api/devoluciones/${devolucionId}`);
+        const detalle = await http.get(`${API_URL}/devoluciones/${devolucionId}`);
         // Actualizar UI con detalles
         // Llenar campos del panel
         // Llenar las fechas de notificación y solvencia
@@ -358,7 +362,7 @@ async function gestionarRequerimiento(devolucionId) {
 
 async function enviarRequerimiento(devolucionId, tipo) {
     try {
-        const ruta = `http://localhost:5000/api/devoluciones/${devolucionId}/requerimientos`;
+        const ruta = `${API_URL}/devoluciones/${devolucionId}/requerimientos`;
         const data = { tipo };
 
         const respuesta = await http.post(ruta, data);
@@ -378,7 +382,7 @@ async function registrarSolvencia(devolucionId, tipo) {
     const hoy = obtenerFechaLocal(); // Formato YYYY-MM-DD
 
     try {
-        const response = await fetch(`http://localhost:5000/api/devoluciones/${devolucionId}`, {
+        const response = await fetch(`${API_URL}/devoluciones/${devolucionId}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ [campo]: hoy })
@@ -439,7 +443,7 @@ document.getElementById('btnRegistrarEmpresa').addEventListener('click', async (
 
     if (!nombre) return mostrarError('El nombre de la empresa y el RFC no pueden estar vacíos.');
 try {
-        const response = await fetch('http://localhost:5000/api/empresas', {
+        const response = await fetch(`${API_URL}/empresas`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nombre, rfc: rfc || null })
@@ -461,7 +465,7 @@ try {
 
 async function cargarEmpresas() {
     try {
-        const empresas = await http.get('http://localhost:5000/api/empresas');
+        const empresas = await http.get(`${API_URL}/empresas`);
 
         // Llenar <select> del formulario de devolución
         const selectEmpresa = document.getElementById('empresa');

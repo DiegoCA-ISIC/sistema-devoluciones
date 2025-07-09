@@ -8,8 +8,10 @@ export default defineConfig({
   root: path.resolve(__dirname, './'),
   server: {
     proxy: {
-      '/api': 'http://localhost:5000',
-      '/static': 'http://localhost:5000'
+      '/api': {
+        target: 'https://sistema-devoluciones.onrender.com',  // ¡URL de tu backend en Render!
+        changeOrigin: true
+      }
     }
   },
   build: {
