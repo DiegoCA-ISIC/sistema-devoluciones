@@ -18,7 +18,11 @@ export default defineConfig({
     outDir: '../backend/static',
     emptyOutDir: true,
     rollupOptions: {
-      input: path.resolve(__dirname, 'index.html')
+      input: {
+        main: path.resolve(__dirname, 'src/main.js')
+      }
     }
-  }
+  },
+    base: '/static/'  // Esto es crucial para las rutas en producción
+
 })
