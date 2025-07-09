@@ -3,8 +3,7 @@
     "@fullcalendar/core": "^6.1.17",
     "@fullcalendar/daygrid": "^6.1.17",
     "@fullcalendar/interaction": "^6.1.17",
-    "@fullcalendar/timegrid": "^6.1.17",
-    "vite": "^7.0.2"
+    "@fullcalendar/timegrid": "^6.1.17"
   },
   "name": "frontend",
   "type": "module",
@@ -14,6 +13,9 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
   },
   "keywords": [],
   "author": "",
