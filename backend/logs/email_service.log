@@ -879,3 +879,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key UTC'
 2025-07-09 10:25:57,518 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:25:57] "GET /api/empresas HTTP/1.1" 200 -
 2025-07-09 10:26:42,848 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:26:42] "GET /api/devoluciones HTTP/1.1" 200 -
 2025-07-09 10:26:43,159 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:26:43] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-09 10:26:53,853 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-09 10:26:53,853 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 10:27:01,147 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:27:01] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-09 10:27:01,149 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:27:01] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-09 10:27:36,481 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:27:36] "GET /api/devoluciones/16 HTTP/1.1" 200 -
+2025-07-09 10:27:40,071 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:27:40] "OPTIONS /api/devoluciones/16 HTTP/1.1" 200 -
+2025-07-09 10:27:40,483 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:27:40] "PUT /api/devoluciones/16 HTTP/1.1" 200 -
+2025-07-09 10:27:40,530 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:27:40] "GET /api/devoluciones/16 HTTP/1.1" 200 -
+2025-07-09 10:28:00,900 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:28:00] "GET /api/devoluciones/16 HTTP/1.1" 200 -

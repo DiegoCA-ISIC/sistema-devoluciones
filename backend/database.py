@@ -1,10 +1,13 @@
 import sqlite3
 from datetime import datetime, timedelta
+import os
+
 
 def init_database():
     """Inicializa la base de datos con estructura completa y datos de prueba"""
     try:
-        conn = sqlite3.connect('devoluciones.db')
+        db_path = os.getenv('DATABASE_URL', 'file:///data/devoluciones.db').replace('file://', '')
+        conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
         
         # Tabla de devoluciones (estructura mejorada)

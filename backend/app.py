@@ -8,18 +8,20 @@ from email.mime.text import MIMEText
 from email_service import Notificador
 import logging
 import os
+from werkzeug.middleware.proxy_fix import ProxyFix
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 import tzdata
 
 
 # Configuración inicial
+
+
 app = Flask(__name__)
-CORS(app, resources={
-    r"/api/*": {
-        "origins": ["http://localhost:5173", "http://127.0.0.1:5173"],
-        "methods": ["GET", "POST", "PUT", "DELETE"],
-        "allow_headers": ["Content-Type"]
-    }
-})
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
+
+
 notificador = Notificador()
 
 # Configuración del sistema
