@@ -136,14 +136,11 @@ def enviar_alerta(email, mensaje):
 # Ruta para archivos estáticos
 @app.route('/static/<path:filename>')
 def static_files(filename):
-    static_dir = os.path.join(app.root_path, '../backend/static')
-    return send_from_directory(static_dir, filename)
-
+    return send_from_directory(os.path.join('static'), filename)
 # Ruta principal
 @app.route('/')
-def serve_frontend():
-    static_dir = os.path.join(app.root_path, '../backend/static')
-    return send_from_directory(static_dir, 'index.html')
+def serve_index():
+    return send_from_directory('static', 'index.html')
 
 @app.route('/api/empresas', methods=['POST'])
 def crear_empresa():

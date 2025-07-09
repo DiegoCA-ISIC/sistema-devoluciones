@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema SAT - Devoluciones</title>
     <!-- Estilos -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="/static/assets/index.[hash].css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- ... otros metadatos ... -->
     <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.11/main.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.11/main.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@6.1.11/main.min.css" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index-DPy113H2.js"></script>
+    <script type="module" crossorigin src="/assets/index-DPy113H2.js"></script>
 </head>
 
 <body>
@@ -106,7 +106,7 @@
                     <label for="fechaPeriodo">Fecha del Periodo:</label>
                     <input type="month" id="fechaPeriodo" class="form-control">
                 </div>
-                
+
                 <button id="btnNuevaDevolucion" class="btn btn-primary">
                     <i class="fas fa-calculator"></i> Calcular Fecha Límite
                 </button>
@@ -153,6 +153,8 @@
         </footer>
     </div>
     <!-- Carga FullCalendar (versión global) -->
+
+    <script type="module" src="/static/assets/index.[hash].js"></script>
 
     <!-- Tu script local -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
