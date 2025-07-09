@@ -10,9 +10,9 @@
   "version": "1.0.0",
   "main": "vite.config.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "dev": "node_modules/.bin/vite",
+    "build": "node_modules/.bin/vite build",
+    "serve": "node_modules/.bin/vite preview"
   },
   "devDependencies": {
     "vite": "^5.0.0"
