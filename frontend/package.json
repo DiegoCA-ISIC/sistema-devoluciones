@@ -3,7 +3,8 @@
     "@fullcalendar/core": "^6.1.17",
     "@fullcalendar/daygrid": "^6.1.17",
     "@fullcalendar/interaction": "^6.1.17",
-    "@fullcalendar/timegrid": "^6.1.17"
+    "@fullcalendar/timegrid": "^6.1.17",
+    "chmod": "^0.2.1"
   },
   "name": "frontend",
   "type": "module",
@@ -11,7 +12,7 @@
   "main": "vite.config.js",
   "scripts": {
     "dev": "npx vite",
-    "build": "npx vite build",
+    "build": "./build.sh",
     "serve": "npx vite preview"
   },
   "devDependencies": {
