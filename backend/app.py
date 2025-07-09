@@ -133,6 +133,12 @@ def enviar_alerta(email, mensaje):
     except Exception as e:
         app.logger.error(f"Error enviando email: {str(e)}")
         
+# Ruta para archivos estáticos
+@app.route('/static/<path:filename>')
+def serve_static(filename):
+    root_dir = os.path.dirname(os.getcwd())
+    return send_from_directory(os.path.join(root_dir, 'backend', 'static'), filename)
+
 @app.route('/')
 def serve_frontend():
     return send_from_directory('../frontend/src', 'index.html')
