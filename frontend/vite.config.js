@@ -23,6 +23,6 @@ export default defineConfig({
       }
     }
   },
-  base: '/frontend/'  // Esto es crucial para las rutas en producción
+  base: '/static/'  // Esto es crucial para las rutas en producción
 
 })
