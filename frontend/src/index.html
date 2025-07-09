@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema SAT - Devoluciones</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- ... otros metadatos ... -->
+    <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.11/main.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.11/main.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@6.1.11/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="panel-requerimientos" class="card panel-requerimientos" style="display: none;">
+        <button id="cerrar-panel" class="btn btn-danger" style="float:right;">Cerrar</button>
+
+        <h2>Detalles de la Devolución</h2>
+
+        <p><strong>ID:</strong> <span id="detalle-id">—</span></p>
+        <p><strong>Fecha de Solicitud:</strong> <span id="detalle-fecha">—</span></p>
+
+        <p><strong>Estado:</strong>
+            <span id="detalle-estado" class="badge">—</span>
+        </p>
+
+        <p><strong>Días Transcurridos:</strong> <span id="detalle-dias-transcurridos">—</span></p>
+        <p><strong>Días Restantes:</strong> <span id="detalle-dias-restantes">—</span></p>
+        <div id="barra-progreso-container">
+            <div class="barra-externa">
+                <div class="barra-interna" id="barra-progreso"></div>
+            </div>
+            <p id="porcentaje-progreso" class="porcentaje-texto">0% del plazo utilizado</p>
+        </div>
+
+        <p><strong>Información de Pausa:</strong> <span id="detalle-pausa">—</span></p>
+
+        <hr>
+
+        <div class="requerimiento-bloque">
+            <h3>Primer Requerimiento</h3>
+            <p><strong>Fecha Notificación:</strong> <span id="req1-notif">—</span></p>
+            <p><strong>Fecha Solvencia:</strong> <span id="req1-solv">—</span></p>
+
+            <div class="botones-requerimiento">
+                <button id="btnReq1" class="btn btn-warning">Registrar Requerimiento 1</button>
+                <button id="btnSolv1" class="btn btn-success">Registrar Solvencia 1</button>
+            </div>
+        </div>
+
+        <!-- ... mismo para el segundo -->
+        <div class="requerimiento-bloque">
+            <h3>Segundo Requerimiento</h3>
+            <p><strong>Fecha Notificación:</strong> <span id="req2-notif">—</span></p>
+            <p><strong>Fecha Solvencia:</strong> <span id="req2-solv">—</span></p>
+
+            <div class="botones-requerimiento">
+                <button id="btnReq2" class="btn btn-warning">Registrar Requerimiento 2</button>
+                <button id="btnSolv2" class="btn btn-success">Registrar Solvencia 2</button>
+            </div>
+        </div>
+
+        <hr>
+
+    </section>
+
+
+
+
+
+    <div class="app-container">
+        <header class="app-header">
+            <h1><i class="fas fa-file-invoice-dollar"></i> Gestión de Devoluciones SAT</h1>
+        </header>
+
+        <!-- Sección del Calendario -->
+        <section class="card calendar-section">
+            <h2><i class="fas fa-calendar-alt"></i> Calendario de Devoluciones</h2>
+            <div id="calendar-container"></div>
+        </section>
+
+        <main class="app-main">
+            <section class="card">
+                <h2><i class="fas fa-file-alt"></i> Nueva Solicitud</h2>
+                <div class="form-group">
+                    <label for="fechaSolicitud">Fecha de Solicitud:</label>
+                    <input type="date" id="fechaSolicitud" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="empresa">Empresa:</label>
+                    <select id="empresa" class="form-control">
+                        <option value="">Selecciona una empresa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="monto">Monto de Devolución:</label>
+                    <input type="number" id="monto" class="form-control" placeholder="0.00" step="0.01" min="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaPeriodo">Fecha del Periodo:</label>
+                    <input type="month" id="fechaPeriodo" class="form-control">
+                </div>
+                
+                <button id="btnNuevaDevolucion" class="btn btn-primary">
+                    <i class="fas fa-calculator"></i> Calcular Fecha Límite
+                </button>
+                <div id="resultado" class="result-box"></div>
+            </section>
+
+            <section class="card submissions-list">
+                <h2><i class="fas fa-list-ul"></i> Devoluciones Registradas</h2>
+                <div class="form-group">
+                    <label for="filtroEmpresa">Filtrar por empresa:</label>
+                    <select id="filtroEmpresa" class="form-control">
+                        <option value="">Todas</option>
+                    </select>
+                </div>
+
+                <div class="table-container">
+                    <table id="tablaDevoluciones" class="data-table">
+                        <!-- Datos se cargarán dinámicamente -->
+                    </table>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2><i class="fas fa-building"></i> Registrar Empresa</h2>
+                <div class="form-group">
+                    <label for="nombreEmpresa">Nombre de la Empresa:</label>
+                    <input type="text" id="nombreEmpresa" class="form-control" placeholder="Ej. Consultores XYZ">
+                </div>
+
+                <div class="form-group">
+                    <label for="rfcEmpresa">RFC (Opcional):</label>
+                    <input type="text" id="rfcEmpresa" class="form-control" maxlength="13">
+                </div>
+
+                <button id="btnRegistrarEmpresa" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Agregar Empresa
+                </button>
+            </section>
+
+        </main>
+
+        <footer class="app-footer">
+            <p>Sistema de Gestión SAT © 2024</p>
+        </footer>
+    </div>
+    <!-- Carga FullCalendar (versión global) -->
+
+    <!-- Tu script local -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script type="module" src="src/main.js"></script>
+
+
+</body>
+
+</html>

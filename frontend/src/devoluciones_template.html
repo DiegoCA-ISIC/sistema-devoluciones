@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial; font-size: 12px; }
+        h1 { color: #333; font-size: 16px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        .section { margin-bottom: 15px; }
+        .section-title { font-weight: bold; margin-bottom: 5px; }
+        table { width: 100%; border-collapse: collapse; }
+        table, th, td { border: 1px solid #ddd; }
+        th, td { padding: 5px; text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Comprobante de Devolución SAT</h1>
+        <p>Generado el: {{ fecha_generacion }}</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Información de la Devolución</div>
+        <table>
+            <tr>
+                <td><strong>ID Devolución:</strong></td>
+                <td>{{ devolucion.id }}</td>
+            </tr>
+            <tr>
+                <td><strong>Fecha Solicitud:</strong></td>
+                <td>{{ devolucion.fecha_solicitud }}</td>
+            </tr>
+            <tr>
+                <td><strong>Fecha Límite:</strong></td>
+                <td>{{ devolucion.fecha_limite }}</td>
+            </tr>
+            <tr>
+                <td><strong>Días Restantes:</strong></td>
+                <td>{{ devolucion.dias_restantes }}</td>
+            </tr>
+            <tr>
+                <td><strong>Estado:</strong></td>
+                <td>{{ devolucion.estado }}</td>
+            </tr>
+        </table>
+    </div>
+
+    {% if requerimientos %}
+    <div class="section">
+        <div class="section-title">Requerimientos Asociados</div>
+        <table>
+            <tr>
+                <th>Tipo</th>
+                <th>Fecha Notificación</th>
+                <th>Fecha Respuesta</th>
+            </tr>
+            {% if requerimientos.notificacion1 %}
+            <tr>
+                <td>Primer Requerimiento</td>
+                <td>{{ requerimientos.notificacion1 or 'N/A' }}</td>
+                <td>{{ requerimientos.respuesta1 or 'Pendiente' }}</td>
+            </tr>
+            {% endif %}
+            {% if requerimientos.notificacion2 %}
+            <tr>
+                <td>Segundo Requerimiento</td>
+                <td>{{ requerimientos.notificacion2 or 'N/A' }}</td>
+                <td>{{ requerimientos.respuesta2 or 'Pendiente' }}</td>
+            </tr>
+            {% endif %}
+        </table>
+    </div>
+    {% endif %}
+</body>
+</html>

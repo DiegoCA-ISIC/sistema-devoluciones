@@ -857,3 +857,25 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key UTC'
 2025-07-07 14:57:17,779 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:57:17] "GET /api/devoluciones/16 HTTP/1.1" 200 -
 2025-07-07 15:04:10,607 - werkzeug - INFO -  * Detected change in 'D:\\SitioWeb\\sistema-devoluciones\\backend\\app.py', reloading
 2025-07-07 15:04:10,785 - werkzeug - INFO -  * Restarting with stat
+2025-07-09 09:33:43,363 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.5:5000
+2025-07-09 09:33:43,390 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 09:45:00,073 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-09 09:45:00,073 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 09:55:37,907 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-09 09:55:37,908 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 10:16:05,393 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.5:5000
+2025-07-09 10:16:05,394 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 10:24:52,170 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:24:52] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-09 10:24:52,172 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:24:52] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-09 10:25:57,516 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:25:57] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-09 10:25:57,518 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:25:57] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-09 10:26:42,848 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:26:42] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-09 10:26:43,159 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 10:26:43] "GET /api/empresas HTTP/1.1" 200 -
