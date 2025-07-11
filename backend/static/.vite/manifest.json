@@ -1,0 +1,12 @@
+{
+  "css/styles.css": {
+    "file": "assets/styles-Cm5AkGYQ.css",
+    "isEntry": true,
+    "src": "css/styles.css"
+  },
+  "src/main.js": {
+    "file": "assets/main-gYKe9BKi.js",
+    "isEntry": true,
+    "src": "src/main.js"
+  }
+}

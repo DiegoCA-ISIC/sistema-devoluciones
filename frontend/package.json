@@ -12,7 +12,7 @@
   "main": "vite.config.js",
   "scripts": {
     "dev": "npx vite",
-    "build": "./build.sh",
+    "build": "npx vite build",
     "serve": "npx vite preview"
   },
   "devDependencies": {
