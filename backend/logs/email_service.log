@@ -934,3 +934,44 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key UTC'
 2025-07-09 16:34:10,245 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
 2025-07-09 16:34:10,448 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 16:34:10] "GET /api/devoluciones HTTP/1.1" 200 -
 2025-07-09 16:34:10,449 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 16:34:10] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-09 16:50:12,484 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-09 16:50:12,485 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 16:53:10,312 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 16:53:10] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-09 16:53:10,314 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 16:53:10] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-10 17:01:18,881 - werkzeug - INFO - 127.0.0.1 - - [10/Jul/2025 17:01:18] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-10 17:01:18,912 - werkzeug - INFO - 127.0.0.1 - - [10/Jul/2025 17:01:18] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-10 17:05:01,639 - werkzeug - INFO - 127.0.0.1 - - [10/Jul/2025 17:05:01] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-10 17:05:01,640 - werkzeug - INFO - 127.0.0.1 - - [10/Jul/2025 17:05:01] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-10 17:05:06,528 - werkzeug - INFO - 127.0.0.1 - - [10/Jul/2025 17:05:06] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-10 17:05:06,843 - werkzeug - INFO - 127.0.0.1 - - [10/Jul/2025 17:05:06] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-10 17:06:05,671 - werkzeug - INFO - 127.0.0.1 - - [10/Jul/2025 17:06:05] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-10 17:06:05,672 - werkzeug - INFO - 127.0.0.1 - - [10/Jul/2025 17:06:05] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:31:41,733 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:31:41] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:31:41,734 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:31:41] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:38:54,407 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:38:54] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:38:54,408 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:38:54] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:39:19,436 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:39:19] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:39:19,752 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:39:19] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:39:34,135 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:39:34] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:39:34,136 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:39:34] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:41:24,269 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:41:24] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:41:24,273 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:41:24] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:41:29,260 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:41:29] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:41:29,576 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:41:29] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:42:22,987 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:42:22] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:42:22,988 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:42:22] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:43:02,302 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:43:02] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:43:02,610 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:43:02] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:43:15,065 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:43:15] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:43:15,067 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:43:15] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:44:34,460 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:44:34] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:44:34,461 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:44:34] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:44:39,841 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:44:39] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:44:40,145 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:44:40] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:45:04,281 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:45:04] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:45:04,281 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:45:04] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:45:09,304 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:45:09] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:45:09,611 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:45:09] "GET /api/empresas HTTP/1.1" 200 -
+2025-07-11 07:45:17,232 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:45:17] "GET /api/devoluciones HTTP/1.1" 200 -
+2025-07-11 07:45:17,232 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:45:17] "GET /api/empresas HTTP/1.1" 200 -
