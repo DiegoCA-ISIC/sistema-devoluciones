@@ -140,7 +140,7 @@ def static_files(filename):
 # Ruta principal
 @app.route('/')
 def serve_index():
-    return send_from_directory('static', 'index.html')
+    return send_from_directory('static', '/static/index.html')
 
 @app.route('/api/empresas', methods=['POST'])
 def crear_empresa():
